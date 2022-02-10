@@ -1,0 +1,17 @@
+{
+    "manifest_version": 2,
+    "name": "Demo",
+    "description": "Demo",
+    "browser_action": {
+        "default_title":"hello",
+        "default_popup":"pop.html"
+    },
+    "version":"1",
+    "permissions": [
+        "activeTab",
+        "http://localhost/*",
+        "storage",
+        "identity"
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'; worker-src 'self'"
+}
